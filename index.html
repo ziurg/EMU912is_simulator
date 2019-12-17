@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="chart.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main" style="width: 637px; height: 480px;">
+        <table id="upperTable" style="width:637px">
+            <tr style="border-top-style: hidden;border-left-style: hidden;border-right-style: hidden">
+              <th height=34px>OIL</th>
+              <th>EGT/CHT</th>
+              <th>THROTTLE</th>
+              <th>FUEL</th>
+              <th>ECV/ACV</th>
+            </tr>
+            <tr style="border-bottom-style: hidden">
+              <td style="border-left-style: hidden;">
+                <span id="oil_pressure">23</span> bar</td>
+              <td><span id="egt">120</span> C</td>
+              <td  height=68px rowspan="2" style="text-align:center; font-size:25px"><span id="throttle">52.8%</span></td>
+              <td><span id="fuel_pressure">23</span> bar</td>
+              <td style="border-right-style: hidden;"><span id="ecv">9.1</span> V</td>
+            </tr style="border-top-style: hidden">
+            <tr>
+              <td style="border-left-style: hidden;"><span id="oil_temp">65</span> C</td>
+              <td><span id="cht">23</span> C</td>
+              <td><span id="fuel_flow">24.5</span> l/h</td>
+              <td style="border-right-style: hidden;"><span id="acv">8.2</span> V</td>
+            </tr>
+            <tr>
+              <td style="border-left-style: hidden;border-bottom-style: hidden"></td>
+              <td  height=40px colspan="3" style="text-align:center"><span>CHECK FUEL PRESSURE</span></td>
+              <td style="border-right-style: hidden;border-bottom-style: hidden"></td>
+            </tr>
+        </table> 
+        
+        <table id="middleTable">
+            <tr style="border-top-style: hidden;border-left-style: hidden;border-right-style: hidden">
+                <td></td>
+                <td height=27px colspan="2">POWER</td>
+                <td></td>
+            </tr>
+            <tr style="height:210px">
+                <td style="border-top-style: hidden;border-left-style: hidden;border-right-style: hidden"></td>
+                <td></td>
+                <td></td>
+                <td style="border-top-style: hidden;border-left-style: hidden;border-right-style: hidden"></td>
+            </tr>
+            <tr>
+                <td height=43px min-width=146px colspan="4">GEN FAIL</td>
+            </tr>
+        </table>
+
+        <table id="lowerTable">
+            <tr style="border-bottom-style: hidden;border-left-style: hidden;border-right-style: hidden">
+                <td>MCR</td>
+                <td>INFO</td>
+                <td>SYST</td>
+                <td>CONF</td>
+                <td id="card_status">Card OK</td>
+            </tr>
+        </table>
+        <!-- <div class="chart-container"></div> -->
+    </div>
+    <!-- here's the div our chart will be injected into -->
+    
+    
+    <!-- these will be made useful in the script below -->
+    <!-- <button class="color" data-color="red">red line</button> -->
+    <!-- <button class="color" data-color="green">green line</button> -->
+    <!-- <button class="color" data-color="blue">blue line</button> -->
+    <!-- <button class="data">change data</button> -->
+    
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="behavior.js"></script>
+
+</body>
+</html>

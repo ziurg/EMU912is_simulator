@@ -1,0 +1,59 @@
+/* couleurs utilisees 
+ vert : 448823
+ rouge : a6190f
+ jaune : a2a72d
+*/
+* {
+    background-color: black;
+   }
+   
+   table {
+     border-collapse: collapse;
+   }
+   
+   table, th, td {
+     border: 1px solid white;
+     color: white;
+     font-family: "Lucida Grande", "Lucida Grande", sans-serif;
+     font-style: normal;
+     padding-left: 8px;
+   }
+
+   #upperTable th {
+    font-size: 20px;
+   }
+   #uperTable td {
+     font-size: 60px;
+  }
+
+   #middleTable {
+    position: relative;
+    width: 79px;
+    margin-left: 275px;
+  }
+   #middleTable th, #middleTable td {
+    font-size: 20px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  #lowerTable {
+    position: relative;
+    width: 100%;
+    height: 58px;
+  }
+  #lowerTable th, #lowerTable td {
+    padding: None;
+    text-align: center;
+    font-size: 30px;
+  }
+
+   th {
+     text-align: left;
+   }
+   
+   #card_status {
+    color: #448823;
+    text-align: right;
+    padding-right: 8px;
+   }
