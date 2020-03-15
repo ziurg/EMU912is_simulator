@@ -28,7 +28,7 @@ var ACV_scale = d3.scaleThreshold()
     .range(["#a6190f", "#a2a72d", "#448823", "#a2a72d", "#a6190f"]) //red, orange, green, orange, red
 /*
     d3.select("span#oil_pressure")
-      .style("color",function (d) { return color(+d.text()); });
+      .style("color",d => color(+d.text()));
 */
 $(document).ready(function(){
     $('span#oil_pressure').each(function(){

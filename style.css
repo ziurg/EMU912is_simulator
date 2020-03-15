@@ -1,40 +1,58 @@
-/* couleurs utilisees 
+/* 800x480 px
+couleurs utilisees 
  vert : 448823
  rouge : a6190f
  jaune : a2a72d
 */
-* {
+body{
     background-color: black;
    }
    
    table {
+     box-sizing: border-box;
      border-collapse: collapse;
    }
    
    table, th, td {
-     border: 1px solid white;
+     border: 1px solid grey;
      color: white;
      font-family: "Lucida Grande", "Lucida Grande", sans-serif;
      font-style: normal;
-     padding-left: 8px;
+     width: 160px;
    }
 
+   
    #upperTable th {
     font-size: 20px;
+    height: 34px;
    }
-   #uperTable td {
-     font-size: 60px;
-  }
+   
+   #upperTable td {
+    font-size: 20px;
+    padding-left: 8px;
+   }
 
    #middleTable {
     position: relative;
     width: 79px;
     margin-left: 275px;
   }
+
    #middleTable th, #middleTable td {
     font-size: 20px;
     padding-left: 0px;
     text-align: center;
+  }
+
+  #middleTable #power_mode {
+    height: 27px;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+  }
+
+  #middleTable #separation {
+    height: 210px;
   }
 
   #lowerTable {
@@ -48,8 +66,9 @@
     font-size: 30px;
   }
 
-   th {
-     text-align: left;
+  #lowerTable td #gen_status {
+    height: 43px;
+    width: 146px;
    }
    
    #card_status {
